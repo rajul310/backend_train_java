@@ -42,8 +42,6 @@ public class GlobalException {
 	        // Create an instance of ApiResponseDTO with the error message
 	        ApiResponseDTO errorResponse = new ApiResponseDTO("Internal Server Error");
 	        
-	        // You can also log the exception here
-	        
 	        // Return ResponseEntity with the error response and appropriate HTTP status
 	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorResponse);
 	    
